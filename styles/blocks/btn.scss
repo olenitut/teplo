@@ -19,3 +19,31 @@
     letter-spacing: 0.63px;
   }
 }
+
+.btn {
+  padding: 20px 30px;
+  border-radius: 20px;
+  background: linear-gradient(101deg, $color-pink 7.09%, $color-orange 107.62%);
+  z-index: 1;
+
+  &__text {
+    color: $color-text-white;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.63px;
+    text-transform: lowercase;
+    cursor: pointer;
+  }
+}
+
+.btn__border {
+  display: flex;
+  height: 58px;
+  padding: 20px 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 20px;
+  border: 2px solid $color-pink;
+  cursor: pointer;
+}
