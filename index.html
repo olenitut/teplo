@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
 
     <title>Teplo</title>
   </head>
@@ -19,7 +30,7 @@
       </a>
       <!-- ADD HREFS TO SECTIONS -->
       <nav class="header__nav">
-        <a class="header__nav-link">Про івент</a>
+        <a class="header__nav-link" href="#about">Про івент</a>
         <a class="header__nav-link">Для кого</a>
         <a class="header__nav-link">Програма</a>
         <a class="header__nav-link">Спікери та гості</a>
@@ -168,7 +179,134 @@
         </div>
       </div>
     </section>
-    <section>about</section>
+    <section id="about" class="section about">
+      <div class="about__left">
+        <div class="section__divider about__title">
+          <div class="section__title">Про івент</div>
+          <div class="subtitle">
+            На вулиці стає холодніше, але це не означає, що наша спільнота не
+            може зігрітися від спілкування, ідей та нових знань.
+          </div>
+        </div>
+        <div class="about__list">
+          <div class="about__list-item">
+            <div class="about__list-item-title about__list-item-title--row">
+              <span class="about__list-item-title-num">4</span>
+              <div>
+                <div>ТОП</div>
+                <div>спікери</div>
+              </div>
+            </div>
+            <div class="about__list-item-subtitle">
+              Поділяться своїм досвідом
+            </div>
+          </div>
+          <div class="about__list-item">
+            <div class="about__list-item-title">
+              <div>ПАНЕЛЬНА</div>
+              <div>дискусія</div>
+            </div>
+            <div class="about__list-item-subtitle">
+              До якої приєднаються 4-ро запрошених експертів
+            </div>
+          </div>
+          <div class="about__list-item">
+            <div class="about__list-item-title">
+              <div>КАВАБРЕЙК</div>
+              <div>з печеньками</div>
+            </div>
+            <div class="about__list-item-subtitle">
+              А для деяких поціновувачів буде кава з корицею :)
+            </div>
+          </div>
+          <div class="about__list-item">
+            <div class="about__list-item-title">
+              <div>НЕТВОРКІНГ</div>
+              <div>тайм</div>
+            </div>
+            <div class="about__list-item-subtitle">
+              Година справді крутих знайомств
+            </div>
+          </div>
+        </div>
+        <div class="about__map">
+          <div id="map" style="width: 700px; height: 107px"></div>
+          <div class="about__map-data">
+            <div class="about__map-text">
+              <div class="about__map-title">IHUB</div>
+              <a
+                href="https://maps.app.goo.gl/WYbcY5r3yVirfZ8ZA"
+                target="_blank"
+                class="about__map-link"
+              >
+                вул. Хрещатик 10<svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="25"
+                  viewBox="0 0 25 25"
+                  fill="none"
+                >
+                  <mask
+                    id="mask0_1_62"
+                    style="mask-type: alpha"
+                    maskUnits="userSpaceOnUse"
+                    x="0"
+                    y="0"
+                    width="25"
+                    height="25"
+                  >
+                    <rect
+                      x="0.111633"
+                      y="0.897705"
+                      width="24"
+                      height="24"
+                      fill="#D9D9D9"
+                    />
+                  </mask>
+                  <g mask="url(#mask0_1_62)">
+                    <path
+                      d="M6.51163 18.8977L5.11163 17.4977L14.7116 7.89771H6.11163V5.89771H18.1116V17.8977H16.1116V9.29771L6.51163 18.8977Z"
+                      fill="#466BFF"
+                    />
+                  </g>
+                </svg>
+              </a>
+            </div>
+            <div>
+              <div class="about__map-detail">Date</div>
+              <div class="about__map-val">22.10.2023</div>
+            </div>
+            <div>
+              <div class="about__map-detail">Time</div>
+              <div class="about__map-val">15:00</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about__right">
+        <div class="about__organizers">
+          <div class="about__organizers-title">Організатори</div>
+          <div class="about__organizers-box">
+            <div class="about__organizer">
+              <img src="./assets/images/hero5.png" />
+              <div class="about__organizer-name">Даяна Євчук</div>
+            </div>
+            <div class="about__organizer">
+              <img src="./assets/images/hero6.png" />
+              <div class="about__organizer-name">Аліна Борка</div>
+            </div>
+          </div>
+        </div>
+        <div class="about__donate">
+          <div class="about__donate-value">50%</div>
+          <div class="about__donate-text">
+            від прибутку <br />
+            будуть передані на <br />
+            потреби ЗСУ
+          </div>
+        </div>
+      </div>
+    </section>
     <section>partners</section>
     <section>for</section>
     <section>program</section>
@@ -176,5 +314,7 @@
     <section>donate</section>
     <section>action</section>
     <section>footer</section>
+
+    <script src="/script.js"></script>
   </body>
 </html>

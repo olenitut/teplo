@@ -1,4 +1,25 @@
 .section {
   margin: 0 auto;
   max-width: 1400px;
+
+  &__divider {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__title {
+    color: $color-text-main;
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: -0.2px;
+  }
+
+  &__subtitle {
+    color: $color-text-secondary;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 140%;
+    letter-spacing: -0.08px;
+  }
 }

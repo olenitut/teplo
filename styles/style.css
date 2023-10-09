@@ -14,6 +14,24 @@ html {
   margin: 0 auto;
   max-width: 1400px;
 }
+.section__divider {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.section__title {
+  color: #0c0d12;
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: -0.2px;
+}
+.section__subtitle {
+  color: #7d7f87;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 140%;
+  letter-spacing: -0.08px;
+}
 
 .header {
   margin-top: 20px;
@@ -21,8 +39,6 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: sticky;
-  top: 0;
   height: 100px;
   padding: 17px 30px;
   border-radius: 30px;
@@ -99,7 +115,7 @@ html {
 .hero {
   display: flex;
   gap: 40px;
-  height: calc(100vh - 100px);
+  margin-bottom: 150px;
 }
 .hero__left {
   height: 500px;
@@ -299,9 +315,185 @@ html {
   gap: 20px;
 }
 
+.about {
+  display: flex;
+  gap: 20px;
+}
+.about__title {
+  width: 50%;
+  margin-bottom: 36px;
+}
+.about__list {
+  display: flex;
+  align-items: center;
+  gap: 90px;
+  margin-bottom: 40px;
+}
+.about__list-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.about__list-item-title {
+  background-image: linear-gradient(180deg, #fa0169 0%, #ff6610 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 130.7%;
+  letter-spacing: -0.09px;
+}
+.about__list-item-title--row {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+}
+.about__list-item-title-num {
+  font-size: 50px;
+}
+.about__list-item-subtitle {
+  color: #7d7f87;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 140%;
+  letter-spacing: -0.08px;
+}
+.about__map {
+  height: 107px;
+  border-radius: 30px;
+  background: #fff;
+  overflow: hidden;
+}
+.about__right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  min-height: 100%;
+}
+.about__organizers {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  color: #7d7f87;
+}
+.about__organizers-title {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 100.7%;
+  letter-spacing: -0.072px;
+}
+.about__organizers-box {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+.about__organizer {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+}
+.about__organizer-name {
+  width: max-content;
+  font-size: 12px;
+}
+.about__donate {
+  width: 200px;
+  height: 171px;
+  border-radius: 30px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  padding-left: 15px;
+  position: relative;
+  overflow: hidden;
+}
+.about__donate-value {
+  background-image: linear-gradient(180deg, #fa0169 0%, #ff6610 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  overflow: hidden;
+  font-size: 49px;
+  font-weight: 500;
+  letter-spacing: -0.244px;
+}
+.about__donate-text {
+  color: #7d7f87;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 140%;
+  letter-spacing: -0.08px;
+}
+.about__donate::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #fa0169;
+  transform: translate(30%, -30%);
+}
+.about__map {
+  display: flex;
+  gap: 20px;
+}
+.about__map-data {
+  margin-top: 15px;
+  display: flex;
+  gap: 30px;
+}
+.about__map-text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.about__map-title {
+  color: #0c0d12;
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: -0.2px;
+}
+.about__map-link {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: #466bff;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 140%;
+  letter-spacing: -0.08px;
+  text-decoration-line: underline;
+}
+.about__map-detail {
+  margin-bottom: 5px;
+  color: #0c0d12;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.05px;
+}
+.about__map-val {
+  color: #0c0d12;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 0.72px;
+  text-transform: uppercase;
+}
+
 body {
   background-color: #f4f4f6;
   font-family: eUkraine, sans-serif;
+}
+
+.leaflet-control {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

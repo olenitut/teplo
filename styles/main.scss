@@ -16,8 +16,13 @@ html {
 @import "./blocks/header.scss";
 @import "./blocks/btn.scss";
 @import "./blocks/hero.scss";
+@import "./blocks/about.scss";
 
 body {
   background-color: $color-bg-grey;
   font-family: eUkraine, sans-serif;
+}
+
+.leaflet-control {
+  display: none;
 }
