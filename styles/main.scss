@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@import "./utils/vars.scss";
+
+body {
+  background-color: $color-bg-grey;
+}
