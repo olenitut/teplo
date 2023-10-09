@@ -6,8 +6,13 @@ html {
   scroll-behavior: smooth;
 }
 
+@font-face {
+  font-family: "eUkraine";
+  src: url("../assets/fonts/e-Ukraine-Regular.woff2") format("woff2");
+}
 body {
   background-color: #f4f4f6;
+  font-family: eUkraine, sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */

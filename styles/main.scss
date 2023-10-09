@@ -6,8 +6,14 @@ html {
   scroll-behavior: smooth;
 }
 
+@font-face {
+  font-family: "eUkraine";
+  src: url("../assets/fonts/e-Ukraine-Regular.woff2") format("woff2");
+}
+
 @import "./utils/vars.scss";
 
 body {
   background-color: $color-bg-grey;
+  font-family: eUkraine, sans-serif;
 }
