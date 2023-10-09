@@ -1,25 +1,3 @@
-.btn__secondary {
-  border-radius: 20px;
-  background: $gradient;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2px;
-  cursor: pointer;
-
-  &-inner {
-    border-radius: 17.5px;
-    padding: 18px 28px;
-    background-color: $color-bg-white;
-
-    color: $color-pink;
-    font-size: 18px;
-    font-weight: 400;
-    letter-spacing: 0.63px;
-  }
-}
-
 .btn {
   padding: 20px 30px;
   border-radius: 20px;
@@ -46,4 +24,5 @@
   border-radius: 20px;
   border: 2px solid $color-pink;
   cursor: pointer;
+  color: $color-pink;
 }

@@ -64,25 +64,8 @@ html {
   letter-spacing: 0.56px;
   cursor: pointer;
 }
-
-.btn__secondary {
-  border-radius: 20px;
-  background: linear-gradient(#fa0169, #ff6610);
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2px;
-  cursor: pointer;
-}
-.btn__secondary-inner {
-  border-radius: 17.5px;
-  padding: 18px 28px;
-  background-color: #fafafa;
-  color: #fa0169;
-  font-size: 18px;
-  font-weight: 400;
-  letter-spacing: 0.63px;
+.header__nav-link:-webkit-any-link {
+  text-decoration: none !important;
 }
 
 .btn {
@@ -110,6 +93,7 @@ html {
   border-radius: 20px;
   border: 2px solid #fa0169;
   cursor: pointer;
+  color: #fa0169;
 }
 
 .hero {
@@ -318,6 +302,7 @@ html {
 .about {
   display: flex;
   gap: 20px;
+  margin-bottom: 150px;
 }
 .about__title {
   width: 50%;
@@ -485,6 +470,17 @@ html {
   font-weight: 300;
   letter-spacing: 0.72px;
   text-transform: uppercase;
+}
+
+.partners {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+.partners__list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 
 body {
