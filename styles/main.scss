@@ -12,6 +12,9 @@ html {
 }
 
 @import "./utils/vars.scss";
+@import "./blocks/section.scss";
+@import "./blocks/header.scss";
+@import "./blocks/btn.scss";
 
 body {
   background-color: $color-bg-grey;

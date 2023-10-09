@@ -10,6 +10,62 @@ html {
   font-family: "eUkraine";
   src: url("../assets/fonts/e-Ukraine-Regular.woff2") format("woff2");
 }
+.section {
+  margin: 0 70px;
+}
+
+.header {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  padding: 17px 30px;
+  border-radius: 30px;
+  background: #fafafa;
+  box-shadow: 0px 2px 14px 0px rgba(0, 0, 0, 0.05);
+}
+.header--logo {
+  max-height: 39px;
+  max-width: 90px;
+}
+.header--logo-link {
+  text-decoration: none;
+}
+.header--nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+.header--nav-link {
+  color: #0c0d12;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.56px;
+  cursor: pointer;
+}
+
+.btn--secondary {
+  border-radius: 20px;
+  background: linear-gradient(#fa0169, #ff6610);
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  cursor: pointer;
+}
+.btn--secondary-inner {
+  border-radius: 17.5px;
+  padding: 18px 28px;
+  background-color: #fafafa;
+  color: #fa0169;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.63px;
+}
+
 body {
   background-color: #f4f4f6;
   font-family: eUkraine, sans-serif;
