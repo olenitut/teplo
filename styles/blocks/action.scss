@@ -1,0 +1,32 @@
+.action {
+  border-radius: 30px;
+  border: 1px solid #7d7f87;
+  background: #f4f4f6;
+  padding: 23px 30px 23px 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 130px;
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+  }
+
+  &__title {
+    color: #0c0d12;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 120%;
+    letter-spacing: -0.12px;
+  }
+
+  &__subtitle {
+    color: #7d7f87;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: -0.08px;
+  }
+}

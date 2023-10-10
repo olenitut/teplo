@@ -96,6 +96,10 @@ html {
   color: #fa0169;
   width: max-content;
 }
+.btn__border--black {
+  border: 2px solid #0c0d12;
+  color: #0c0d12;
+}
 
 .hero {
   display: flex;
@@ -804,6 +808,7 @@ html {
   display: flex;
   gap: 70px;
   align-items: center;
+  margin-bottom: 150px;
 }
 .donate__left {
   width: 66%;
@@ -821,6 +826,36 @@ html {
   position: absolute;
   top: -45px;
   left: -50px;
+}
+
+.action {
+  border-radius: 30px;
+  border: 1px solid #7d7f87;
+  background: #f4f4f6;
+  padding: 23px 30px 23px 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 130px;
+}
+.action__text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 50%;
+}
+.action__title {
+  color: #0c0d12;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 120%;
+  letter-spacing: -0.12px;
+}
+.action__subtitle {
+  color: #7d7f87;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: -0.08px;
 }
 
 body {

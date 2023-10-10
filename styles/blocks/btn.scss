@@ -26,4 +26,9 @@
   cursor: pointer;
   color: $color-pink;
   width: max-content;
+
+  &--black {
+    border: 2px solid $color-text-main;
+    color: $color-text-main;
+  }
 }
