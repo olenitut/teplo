@@ -4,16 +4,31 @@
   box-shadow: 0px 2px 14px 0px rgba(0, 0, 0, 0.05);
   overflow: hidden;
   margin-bottom: 160px;
+  padding-right: 20px;
 
   display: flex;
   gap: 40px;
   align-items: center;
+
+  @media (max-width: 1050px) {
+    padding: 20px;
+  }
+
+  #map2 {
+    @media (max-width: 1050px) {
+      display: none;
+    }
+  }
 
   &__nav {
     display: flex;
     gap: 90px;
     align-items: center;
     margin-bottom: 45px;
+
+    @media (max-width: 1050px) {
+      display: none;
+    }
   }
 
   &__text {
@@ -21,6 +36,13 @@
     gap: 30px;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 1050px) {
+      flex-direction: column;
+      gap: 10px;
+      align-items: start;
+      margin-bottom: 10px;
+    }
   }
 
   &__item {
@@ -28,5 +50,24 @@
     font-size: 18px;
     font-weight: 300;
     letter-spacing: 0.63px;
+
+    @media (max-width: 1350px) {
+      font-size: 11px;
+    }
+  }
+
+  &__btn {
+    display: none;
+    @media (max-width: 1050px) {
+      display: flex;
+      margin-bottom: 25px;
+    }
+    @media (max-width: 800px) {
+      width: 100%;
+    }
+  }
+
+  &__wrap {
+    width: 100%;
   }
 }
