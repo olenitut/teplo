@@ -20,3 +20,18 @@ document.querySelector(".program__list").addEventListener("click", (e) => {
 
   item.classList.toggle("program__item--open");
 });
+
+var map2 = L.map("map2", {
+  center: [50.45179, 30.52585],
+  zoom: 17,
+});
+
+var tiles = new L.tileLayer(
+  "https://tile.openstreetmap.org/{z}/{x}/{y}.png"
+).addTo(map2);
+
+var marker = L.marker([50.45179, 30.52585], {
+  title: "IHub",
+});
+
+marker.addTo(map2);
