@@ -12,3 +12,11 @@ var marker = L.marker([50.45179, 30.52585], {
 });
 
 marker.addTo(map);
+
+document.querySelector(".program__list").addEventListener("click", (e) => {
+  const item = e.target.closest(".program__item");
+
+  if (!item) return;
+
+  item.classList.toggle("program__item--open");
+});
