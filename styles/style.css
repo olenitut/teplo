@@ -1223,10 +1223,20 @@ html {
   align-items: center;
   justify-content: space-between;
 }
+@media (max-width: 1000px) {
+  .speakers__top {
+    display: none;
+  }
+}
 .speakers__list {
   display: flex;
   align-items: center;
   gap: 20px;
+}
+@media (max-width: 1000px) {
+  .speakers__list .program__guest {
+    display: none;
+  }
 }
 .speakers__action {
   display: flex;
