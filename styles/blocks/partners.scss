@@ -4,6 +4,13 @@
   gap: 35px;
   margin-bottom: 135px;
 
+  @media (max-width: 1350px) {
+    margin-bottom: 100px;
+  }
+  @media (max-width: 600px) {
+    margin-bottom: 50px;
+  }
+
   &__list {
     display: flex;
     align-items: center;
