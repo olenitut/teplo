@@ -35,3 +35,16 @@ var marker = L.marker([50.45179, 30.52585], {
 });
 
 marker.addTo(map2);
+
+document.querySelector(".header__menu-btn").addEventListener("click", () => {
+  document.querySelector(".menu").classList.add("menu--open");
+});
+
+document.querySelector(".menu").addEventListener("click", (e) => {
+  if (
+    e.target.closest(".header__nav-link") ||
+    e.target.closest(".menu__icon")
+  ) {
+    document.querySelector(".menu").classList.remove("menu--open");
+  }
+});

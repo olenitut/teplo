@@ -1,0 +1,34 @@
+.menu {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  transform: translateX(100%);
+  transition: all 0.3s;
+
+  &--open {
+    visibility: unset;
+    transform: translateX(0);
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-bg-white;
+  z-index: 999;
+}

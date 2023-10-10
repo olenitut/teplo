@@ -1418,6 +1418,37 @@ html {
   width: 100%;
 }
 
+.menu {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  transform: translateX(100%);
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fafafa;
+  z-index: 999;
+}
+.menu--open {
+  visibility: unset;
+  transform: translateX(0);
+}
+.menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.menu__icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
 body {
   background-color: #f4f4f6;
   font-family: eUkraine, sans-serif;
