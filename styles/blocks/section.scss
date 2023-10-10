@@ -22,4 +22,11 @@
     line-height: 140%;
     letter-spacing: -0.08px;
   }
+
+  @media (max-width: 1350px) {
+    margin: 0 50px;
+  }
+  @media (max-width: 600px) {
+    margin: 0 20px;
+  }
 }
