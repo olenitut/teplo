@@ -779,6 +779,7 @@ html {
   display: flex;
   flex-direction: column;
   gap: 65px;
+  margin-bottom: 150px;
 }
 .speakers__top {
   display: flex;
@@ -794,6 +795,32 @@ html {
   display: flex;
   flex-direction: column;
   gap: 25px;
+}
+
+.donate {
+  border-radius: 30px;
+  background: #fafafa;
+  padding: 56px 48px;
+  display: flex;
+  gap: 70px;
+  align-items: center;
+}
+.donate__left {
+  width: 66%;
+}
+.donate__right {
+  display: flex;
+  align-items: end;
+  gap: 25px;
+  flex-direction: column;
+}
+.donate__btn {
+  position: relative;
+}
+.donate__drone {
+  position: absolute;
+  top: -45px;
+  left: -50px;
 }
 
 body {
