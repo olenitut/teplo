@@ -1,0 +1,35 @@
+.for {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 150px;
+
+  &__list {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    padding: 21px 23px;
+    gap: 22px;
+    border-radius: 30px;
+    background: #fff;
+    width: calc((100% - 44px) / 3);
+    border: 2px solid transparent;
+
+    &-text {
+      color: $color-text-main;
+      font-size: 24px;
+      font-weight: 300;
+      letter-spacing: -0.12px;
+    }
+
+    &--trans {
+      flex-direction: column;
+      background-color: transparent;
+      border: 2px solid $color-text-tertiary;
+    }
+  }
+}

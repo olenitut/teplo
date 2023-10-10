@@ -476,11 +476,44 @@ html {
   display: flex;
   flex-direction: column;
   gap: 35px;
+  margin-bottom: 135px;
 }
 .partners__list {
   display: flex;
   align-items: center;
   gap: 40px;
+}
+
+.for {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 150px;
+}
+.for__list {
+  display: flex;
+  gap: 20px;
+}
+.for__item {
+  display: flex;
+  align-items: center;
+  padding: 21px 23px;
+  gap: 22px;
+  border-radius: 30px;
+  background: #fff;
+  width: calc((100% - 44px) / 3);
+  border: 2px solid transparent;
+}
+.for__item-text {
+  color: #0c0d12;
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: -0.12px;
+}
+.for__item--trans {
+  flex-direction: column;
+  background-color: transparent;
+  border: 2px solid #acaeb8;
 }
 
 body {
