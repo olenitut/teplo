@@ -12,6 +12,14 @@
     text-transform: lowercase;
     cursor: pointer;
   }
+
+  @media (max-width: 1150px) {
+    padding: 10px 15px;
+
+    &__text {
+      font-size: 14px;
+    }
+  }
 }
 
 .btn__border {
@@ -30,5 +38,10 @@
   &--black {
     border: 2px solid $color-text-main;
     color: $color-text-main;
+  }
+
+  @media (max-width: 1150px) {
+    padding: 10px 15px;
+    font-size: 14px;
   }
 }

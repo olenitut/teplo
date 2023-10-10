@@ -11,6 +11,16 @@
   background: $color-bg-white;
   box-shadow: 0px 2px 14px 0px rgba(0, 0, 0, 0.05);
 
+  @media (max-width: 1150px) {
+    height: 80px;
+  }
+
+  &__btn {
+    @media (max-width: 800px) {
+      display: none !important;
+    }
+  }
+
   &__logo {
     max-height: 39px;
     max-width: 90px;
@@ -34,6 +44,28 @@
       &:-webkit-any-link {
         text-decoration: none !important;
       }
+    }
+
+    @media (max-width: 1150px) {
+      gap: 20px;
+      height: 80px;
+
+      &-link {
+        font-size: 12px;
+      }
+    }
+
+    @media (max-width: 800px) {
+      display: none;
+    }
+  }
+
+  &__menu-btn {
+    display: none;
+
+    @media (max-width: 800px) {
+      display: block;
+      cursor: pointer;
     }
   }
 }
