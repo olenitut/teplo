@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 30% 1fr;
   gap: 50px;
+  margin-bottom: 150px;
 
   &__list {
     display: flex;
@@ -223,6 +224,7 @@
   }
 
   &__guest {
+    min-width: 185px;
     width: 185px;
     height: 185px;
     border-radius: 30px;

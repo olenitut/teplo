@@ -12,7 +12,7 @@ html {
 }
 .section {
   margin: 0 auto;
-  max-width: 1400px;
+  max-width: 1300px;
 }
 .section__divider {
   display: flex;
@@ -94,6 +94,7 @@ html {
   border: 2px solid #fa0169;
   cursor: pointer;
   color: #fa0169;
+  width: max-content;
 }
 
 .hero {
@@ -297,6 +298,7 @@ html {
   display: flex;
   align-items: center;
   gap: 20px;
+  text-decoration: none;
 }
 
 .about {
@@ -520,6 +522,7 @@ html {
   display: grid;
   grid-template-columns: 30% 1fr;
   gap: 50px;
+  margin-bottom: 150px;
 }
 .program__list {
   display: flex;
@@ -705,6 +708,7 @@ html {
   transition-delay: 250ms;
 }
 .program__guest {
+  min-width: 185px;
   width: 185px;
   height: 185px;
   border-radius: 30px;
@@ -769,6 +773,27 @@ html {
   font-size: 16px;
   font-weight: 300;
   letter-spacing: -0.08px;
+}
+
+.speakers {
+  display: flex;
+  flex-direction: column;
+  gap: 65px;
+}
+.speakers__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.speakers__list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.speakers__action {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 
 body {

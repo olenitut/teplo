@@ -1,0 +1,23 @@
+.speakers {
+  display: flex;
+  flex-direction: column;
+  gap: 65px;
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__action {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+}
