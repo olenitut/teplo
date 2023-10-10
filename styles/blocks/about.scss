@@ -104,6 +104,11 @@
     @media (max-width: 1350px) {
       flex-direction: row;
     }
+
+    @media (max-width: 550px) {
+      flex-direction: column;
+      gap: 10px;
+    }
   }
 
   &__organizers {
@@ -215,6 +220,10 @@
       display: flex;
       gap: 30px;
       align-items: center;
+
+      @media (max-width: 550px) {
+        gap: 10px;
+      }
     }
 
     &-text {

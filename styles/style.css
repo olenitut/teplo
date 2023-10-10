@@ -490,6 +490,12 @@ html {
     padding: 20px;
   }
 }
+@media (max-width: 550px) {
+  .hero__right-actions {
+    flex-direction: column;
+    height: max-content;
+  }
+}
 .hero__right-actions::before {
   content: "";
   position: absolute;
@@ -613,6 +619,12 @@ html {
     flex-direction: row;
   }
 }
+@media (max-width: 550px) {
+  .about__right {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
 .about__organizers {
   display: flex;
   flex-direction: column;
@@ -716,6 +728,11 @@ html {
   display: flex;
   gap: 30px;
   align-items: center;
+}
+@media (max-width: 550px) {
+  .about__map-data {
+    gap: 10px;
+  }
 }
 .about__map-text {
   display: flex;
