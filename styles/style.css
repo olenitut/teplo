@@ -435,6 +435,11 @@ html {
     gap: 10px;
   }
 }
+@media (max-width: 750px) {
+  .hero__right {
+    flex-direction: column-reverse;
+  }
+}
 .hero__right-list {
   display: flex;
   justify-content: space-between;

@@ -235,6 +235,9 @@
     @media (max-width: 1350px) {
       gap: 10px;
     }
+    @media (max-width: 750px) {
+      flex-direction: column-reverse;
+    }
 
     &-list {
       display: flex;
