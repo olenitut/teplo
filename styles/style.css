@@ -157,16 +157,44 @@ html {
   cursor: pointer;
   color: #fa0169;
   width: max-content;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
 }
 .btn__border--black {
-  border: 2px solid #0c0d12;
-  color: #0c0d12;
+  border: 2px solid #0c0d12 !important;
+  color: #0c0d12 !important;
+}
+.btn__border--black::before {
+  background: transparent !important;
 }
 @media (max-width: 1150px) {
   .btn__border {
     padding: 15px 20px;
     font-size: 14px;
   }
+}
+.btn__border:hover {
+  color: #f7f8fc;
+  border: 2px solid transparent;
+}
+
+.btn__border::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(101deg, #fa0169 7.09%, #ff6610 107.62%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: -1;
+}
+
+.btn__border:hover::before {
+  opacity: 1; /* Show the background gradient on hover */
 }
 
 .hero {
@@ -538,6 +566,14 @@ html {
     width: 100%;
   }
 }
+.about__left {
+  max-width: 83%;
+}
+@media (max-width: 1350px) {
+  .about__left {
+    max-width: 100%;
+  }
+}
 .about__list {
   display: flex;
   align-items: center;
@@ -619,18 +655,18 @@ html {
     flex-direction: row;
   }
 }
-@media (max-width: 550px) {
-  .about__right {
-    flex-direction: column;
-    gap: 10px;
-  }
-}
 .about__organizers {
   display: flex;
   flex-direction: column;
   gap: 20px;
   align-items: center;
   color: #7d7f87;
+}
+@media (max-width: 600px) {
+  .about__organizers img {
+    width: 50px;
+    height: 50px;
+  }
 }
 .about__organizers-title {
   font-size: 14px;
@@ -678,7 +714,14 @@ html {
 }
 @media (max-width: 600px) {
   .about__donate {
-    width: 180px;
+    width: 160px;
+    height: 160px;
+  }
+}
+@media (max-width: 400px) {
+  .about__donate {
+    width: 130px;
+    height: 130px;
   }
 }
 .about__donate-value {
@@ -913,7 +956,7 @@ html {
   color: #0c0d12;
   width: 100%;
   height: 80px;
-  border-radius: 20px;
+  border-radius: 29px;
   background: #fff;
   display: grid;
   grid-template-columns: max-content 1fr max-content;
@@ -1369,6 +1412,7 @@ html {
   gap: 90px;
   align-items: center;
   margin-bottom: 45px;
+  justify-content: space-between;
 }
 @media (max-width: 1050px) {
   .footer__nav {
@@ -1428,10 +1472,16 @@ html {
   transform: translateX(100%);
   transition: all 0.3s;
   display: flex;
+  flex-direction: column;
+  gap: 40px;
+  display: flex;
   align-items: center;
   justify-content: center;
   background-color: #fafafa;
   z-index: 999;
+}
+.menu .header__nav-link {
+  font-size: 20px;
 }
 .menu--open {
   visibility: unset;
@@ -1440,7 +1490,8 @@ html {
 .menu__list {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 30px;
+  align-items: center;
 }
 .menu__icon {
   position: absolute;

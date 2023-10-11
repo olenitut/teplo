@@ -41,10 +41,7 @@ document.querySelector(".header__menu-btn").addEventListener("click", () => {
 });
 
 document.querySelector(".menu").addEventListener("click", (e) => {
-  if (
-    e.target.closest(".header__nav-link") ||
-    e.target.closest(".menu__icon")
-  ) {
+  if (e.target.closest(".menu-close")) {
     document.querySelector(".menu").classList.remove("menu--open");
   }
 });

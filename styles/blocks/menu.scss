@@ -7,6 +7,13 @@
   left: 0;
   transform: translateX(100%);
   transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  .header__nav-link {
+    font-size: 20px;
+  }
 
   &--open {
     visibility: unset;
@@ -16,7 +23,8 @@
   &__list {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 30px;
+    align-items: center;
   }
 
   &__icon {

@@ -22,14 +22,24 @@
   <body>
     <div class="menu" id="menu">
       <div class="menu__list">
-        <a class="header__nav-link" href="#about">Про івент</a>
-        <a class="header__nav-link" href="#for">Для кого</a>
-        <a class="header__nav-link" href="#program">Програма</a>
-        <a class="header__nav-link" href="#speakers">Спікери та гості</a>
-        <a class="header__nav-link" href="#donate">Збір</a>
+        <a class="header__nav-link menu-close" href="#about">Про івент</a>
+        <a class="header__nav-link menu-close" href="#for">Для кого</a>
+        <a class="header__nav-link menu-close" href="#program">Програма</a>
+        <a class="header__nav-link menu-close" href="#speakers"
+          >Спікери та гості</a
+        >
+        <a class="header__nav-link menu-close" href="#donate">Збір</a>
       </div>
+      <div class="btn__border menu-close">придбати квиток</div>
+      <a href="#" class="header__logo-link menu-close">
+        <img
+          class="header__logo"
+          src="./assets/images/logo.svg"
+          alt="Тепло лого"
+        />
+      </a>
 
-      <div class="menu__icon">X</div>
+      <div class="menu__icon menu-close">X</div>
     </div>
 
     <header class="section header">
@@ -351,7 +361,7 @@
         </div>
       </div>
     </section>
-    <section class="section partners">
+    <!-- <section class="section partners">
       <div class="section__divider">
         <div class="section__title">Наші партнери</div>
         <div class="section__subtitle">
@@ -363,11 +373,11 @@
           ><img src="./assets/images/partners1.png"
         /></a>
       </div>
-    </section>
+    </section> -->
     <section id="for" class="section for">
       <div class="section__divider">
         <div class="section__title">Для кого</div>
-        <div class="section__subtitle">Ти - ідеальний учасний тільки якщо:</div>
+        <div class="section__subtitle">Ти - ідеальний учасник, якщо:</div>
       </div>
       <div class="for__list">
         <div class="for__item">
@@ -486,7 +496,7 @@
           <div class="program__text">
             <div class="program__text-main">Секретна тема</div>
             <div class="program__text-sec program__text-sec--closed">
-              Найвідоміший експерт по телеграму в Україні
+              Експерт у запуску онлайн-навчання
             </div>
             <div class="program__text-sec program__text-sec--open">
               Експерт у запуску онлайн-навчання. <br />
@@ -555,7 +565,7 @@
         </div>
         <div class="program__item">
           <div class="program__item-header">
-            <img src="./assets/images/program1.png" />
+            <img src="./assets/images/program2.png" />
             <div>
               <div class="program__item-header-title">Нетворкінг</div>
               <div class="program__item-header-subtitle">
@@ -911,10 +921,10 @@
           </div>
           <div class="section__subtitle">
             Батько однієї з організаторок цього івенту знаходиться зараз на
-            передовій, і ми розуміємо що цей івент моджливий завдяки йому та
-            всім ЗСУ які прямо зараз боронять нашу державу. 50% прибутку ми
-            віддамо на збір його бригаді, але якщо у вас є бажання допомогти -
-            будемо дуже вдячні
+            передовій, і ми розуміємо що цей івент можливий завдяки йому та всім
+            ЗСУ які прямо зараз боронять нашу державу. 50% прибутку ми віддамо
+            на збір його бригаді, але якщо у вас є бажання допомогти - будемо
+            дуже вдячні
           </div>
         </div>
       </div>
@@ -925,6 +935,7 @@
             class="btn__border"
             href="https://send.monobank.ua/jar/8nuSrRX4rt"
             target="_blank"
+            style="text-decoration: none"
             >закинути на монобанку</a
           >
           <img src="./assets/images/donate-drone.png" class="donate__drone" />
@@ -941,7 +952,13 @@
           Дай відповідь на кілька коротких питань та залиш свою заявку
         </div>
       </div>
-      <a class="btn__border btn__border--black">заповнити заявку</a>
+      <a
+        class="btn__border btn__border--black"
+        href="https://forms.gle/MTerc8HKLAiTaMh88"
+        target="_blank"
+        style="text-decoration: none"
+        >заповнити заявку</a
+      >
     </section>
     <footer class="section footer">
       <div id="map2" style="width: 182px; height: 160px"></div>
