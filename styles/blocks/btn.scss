@@ -3,6 +3,7 @@
   border-radius: 20px;
   background: linear-gradient(101deg, $color-pink 7.09%, $color-orange 107.62%);
   z-index: 1;
+  text-decoration: none;
 
   &__text {
     color: $color-text-white;
@@ -38,7 +39,7 @@
   position: relative;
   overflow: hidden;
   z-index: 1;
-
+  text-decoration: none;
   &--black {
     border: 2px solid $color-text-main !important;
     color: $color-text-main !important;
