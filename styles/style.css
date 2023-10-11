@@ -1527,6 +1527,25 @@ html {
   cursor: pointer;
 }
 
+.terms__header {
+  color: #0c0d12;
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: -0.2px;
+  text-align: center;
+}
+.terms__text {
+  color: #7d7f87;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 120%; /* 19.2px */
+  letter-spacing: -0.08px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 100px;
+}
+
 body {
   background-color: #f4f4f6;
   font-family: eUkraine, sans-serif;
