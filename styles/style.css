@@ -1263,6 +1263,7 @@ html {
   font-size: 16px;
   font-weight: 300;
   letter-spacing: -0.08px;
+  text-align: center;
 }
 .program__adaptive-networking {
   cursor: pointer;
